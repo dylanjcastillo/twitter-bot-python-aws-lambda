@@ -54,3 +54,7 @@ Read this before using the bot:
 
 - This is free unless you go crazy with it or use custom events for triggering the Lambda. Check the [AWS Free Tier](https://aws.amazon.com/free/) if you have any questions. Use at your own risk!
 - Current logic is very simple. The bot will post a random tweet avoiding posting repeating its last 3 tweets. If you want something more complex, you'll need to add it on your own.
+
+## Attributions
+
+The `createlambdalayer.sh` script comes from [this repository](https://github.com/aws-samples/aws-lambda-layer-create-script).
