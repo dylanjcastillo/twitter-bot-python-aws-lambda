@@ -36,7 +36,7 @@ def lambda_handler(event, context):
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth)
 
-    print("Get tweet from Google Sheets")
+    print("Get tweet from csv file")
     tweets_file = ROOT / "tweets.csv"
     recent_tweets = api.user_timeline()[:3]
     tweet = get_tweet(tweets_file)
