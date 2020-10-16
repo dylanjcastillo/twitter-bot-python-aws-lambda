@@ -45,8 +45,9 @@ Once you are happy with your bot:
 2. Run `sh createlambdalayer.sh` from the root directory of your project. It'll generate a zip file with your libraries called `layer.zip`
 3. Update your Lambda Layer using `layer.zip`
 4. Run `sh buildpackage.sh` from the root directory of your project. It'll make a zip file with the code for your Lambda Function called `lambda_function.zip`
-5. Upload `lambda_function.zip` to your Lambda function
-6. Add a scheduled trigger to your Lambda Function using [EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/run-lambda-schedule.html) 
+5. Upload `lambda_function.zip` to your Lambda Function
+6. Add your twitter App keys as environment variables in the Lambda Function
+7. Add a scheduled trigger to your Lambda Function using [EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/run-lambda-schedule.html) 
 
 ## Limitations
 
