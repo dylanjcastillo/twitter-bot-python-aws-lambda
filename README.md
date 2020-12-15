@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/_dylancastillo.svg?style=social&label=Follow%20%40_dylancastillo)](https://twitter.com/_dylancastillo)
 
-This a simple template you can use to build a twitter bot using Python and an AWS Lambda Function. I used it to create [@dereksiversbot](https://twitter.com/dereksiversbot). Learn how to make your own [here.](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
+This is a simple template you can use to build a twitter bot using Python and an AWS Lambda Function. I used it to create [@dereksiversbot](https://twitter.com/dereksiversbot). Learn how to make your own [here.](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
  
 Why build a bot this way?
  
