@@ -32,16 +32,17 @@ def lambda_handler(event, context):
     access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
 
     print("Authenticate")
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    api = tweepy.API(auth)
+    client = tweepy.Client(
+                       consumer_key=consumer_key,
+                       consumer_secret=consumer_secret,
+                       access_token=access_token,
+                       access_token_secret=access_token_secret
+                    )
 
     print("Get tweet from csv file")
     tweets_file = ROOT / "tweets.csv"
-    recent_tweets = api.user_timeline()[:3]
     tweet = get_tweet(tweets_file)
-
-    print(f"Post tweet: {tweet}")
-    api.update_status(tweet)
+    print(f"Post tweet: {tweet}") 
+    client.create_tweet(text=tweet, user_auth=True)
 
     return {"statusCode": 200, "tweet": tweet}
